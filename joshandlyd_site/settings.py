@@ -89,6 +89,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.contrib.sites",
     "django.contrib.webdesign",
+    "gunicorn",
 
     "uni_form",
 
