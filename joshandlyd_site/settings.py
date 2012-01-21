@@ -8,9 +8,13 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, "site_media", "static")
 STATIC_URL = "/site_media/static/"
+ADMIN_MEDIA_PREFIX = "/site_media/static/admin/"
 STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, "static"),
 ]
+
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, "site_media", "media")
+MEDIA_URL = "/site_media/media/"
 
 ADMINS = [
     ("Josh Boles", "jaboles@gmail.com"),
@@ -35,6 +39,11 @@ TEMPLATE_LOADERS = [
     "django.template.loaders.filesystem.load_template_source",
     "django.template.loaders.app_directories.load_template_source",
 ]
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
 
 SEND_BROKEN_LINK_EMAILS = True
 APPEND_SLASH = True
