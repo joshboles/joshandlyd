@@ -1,0 +1,273 @@
+img {
+    border: none;
+}
+
+.blue {
+    color: #4461AC;
+}
+
+.hrBlue {
+    color: #c0cbe6;
+    width: 383px;
+}
+
+#content a {
+    text-decoration: none;
+    color: #321d00;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p.story {
+    font-size: 13px;
+    line-height: 26px;
+    width: 700px;
+    margin: 0px auto;
+}
+
+p.info {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.emphasis {
+    font-size: 18px;
+    font-weight: bold;
+}
+body {
+    width: 99%;
+    background-color: #FFF;
+    color: #321d00;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+    #wrapper {
+        width: 1024px;
+        background: url(../img/background.png);
+        position: relative;
+        margin: 0px auto;
+    }
+
+        #header {
+
+        }
+
+            #logo {
+                margin: 0px auto;
+                height: 241px;
+                width: 542px;
+                background: transparent url(../img/logo_and_nav.png) top left no-repeat;
+                z-index: 10;
+                position: relative;
+            }
+
+            #nav {
+                top: 112px;
+                left: 183px;
+                margin-top: 10px;
+                height: 57px;
+                width: 800px;
+                position: absolute;
+                z-index: 15;
+            }
+
+                #nav ul {
+                    position: absolute;
+                    top: 30px;
+                    left: 65px;
+                    margin: 0px;
+                }
+
+                    #nav ul li{
+                        display: inline;
+                        margin: 0px;
+                    }
+
+                        #nav ul li a {
+                            text-decoration: none;
+                        }
+
+        #contentWrapper {
+            width: 702px;
+            position: absolute;
+            margin: 30px auto 0px auto;
+            position: absolute;
+            top: 170px;
+            left: 160px;
+            z-index: 1;
+        }
+
+            #topBar {
+                width: 702px;
+                height: 10px;
+                background: url(../img/img_top_border.png);
+            }
+
+            #content {
+                padding-left: 13px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 702px;
+                background: url(../img/bg_content.png) repeat-y top left;
+            }
+            #botBar {
+                width: 702px;
+                height: 10px;
+                background: url(../img/img_bottom_border.png);
+            }
+
+        #dateBanner {
+            position: absolute;
+            top: 265px;
+            left: -36px;
+            z-index: 10;
+            height: 88px;
+            width: 773px;
+            background: url(../img/date_banner.png);
+        }
+
+/******** RSVP Form Styles *******/
+
+.hidden {
+    display: none;
+}
+
+#div_id_dinner_dancing ul {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+#div_id_dinner_dancing ul li {
+    display: inline;
+    float: right;
+    width: 50px;
+}
+
+#div_id_email label {
+    width: 40px !important;
+    float: left;
+}
+
+input#id_email {
+    margin-left: 70px;
+    width: 350px;
+    float: left;
+}
+
+#div_id_invitation_name {
+    margin-bottom: 20px;
+}
+
+    #id_invitation_name {
+        width: 460px;
+    }
+
+    /** Labels for name text fields **/
+#div_id_dinnerchoice_set-0-name label, #div_id_dinnerchoice_set-1-name label,
+#div_id_dinnerchoice_set-2-name label, #div_id_dinnerchoice_set-3-name label {
+    float: left;
+    width: 40px !important;
+}
+
+    /** Name text fields **/
+input#id_dinnerchoice_set-0-name, input#id_dinnerchoice_set-1-name,
+input#id_dinnerchoice_set-2-name, input#id_dinnerchoice_set-3-name {
+    width: 350px;
+    float: left;
+    margin-left: 70px;
+}
+
+    /** Labels for dinner choice fields **/
+#div_id_dinnerchoice_set-0-dinner_choice label, #div_id_dinnerchoice_set-1-dinner_choice label,
+#div_id_dinnerchoice_set-2-dinner_choice label, #div_id_dinnerchoice_set-3-dinner_choice label {
+    float: left;
+    width: 100px !important;
+}
+    /** Dinner choice fields **/
+select#id_dinnerchoice_set-0-dinner_choice, select#id_dinnerchoice_set-1-dinner_choice,
+select#id_dinnerchoice_set-2-dinner_choice, select#id_dinnerchoice_set-3-dinner_choice {
+    width: 200px;
+    float: left;
+    margin-left: 10px;
+}
+
+#div_id_dinnerchoice_set-0-name, #div_id_dinnerchoice_set-1-name,
+#div_id_dinnerchoice_set-2-name, #div_id_dinnerchoice_set-3-name {
+    width: 470px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#div_id_dinnerchoice_set-0-dinner_choice, #div_id_dinnerchoice_set-1-dinner_choice,
+#div_id_dinnerchoice_set-2-dinner_choice, #div_id_dinnerchoice_set-3-dinner_choice {
+    width: 470px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+div#div_id_comments {
+    display: none;
+}
+
+.uniForm .textInput, .uniForm .fileUpload, .uniForm .selectInput, .uniForm select, .uniForm textarea {
+    width: 100%;
+}
+
+input[type=text], #id_comments {
+    border: 1px solid #3DB2B7;
+}
+
+.form_block {
+    height: 20px;
+    width: 470px;
+}
+
+#addGuest {
+    float: left;
+}
+
+#removeGuest {
+    float: right;
+}
+
+input[type=submit] {
+    margin-top: 25px;
+    background-color: #3DB2B7;
+    width: 95px;
+    height: 25px;
+    color: #FFF;
+    font-weight: bold;
+    float: left;
+}
+
+#dinner_descriptions {
+    margin-top: 5px;
+}
+#dinner_descriptions p {
+    font-size: 13px;
+}
+
+.rsvpForm {
+    margin: 25px;
+}
+
+/******** End RSVP Form Styles *******/
+
+.confirmationMessage {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+}

@@ -1,0 +1,37 @@
+{% extends ".html" %}
+{% load uni_form_tags %}
+{% block body %}
+<form action="" method="POST" class="uniForm rsvpForm">
+        {% csrf_token %}
+        {{ form|as_uni_form }}
+
+        {{ formset.management_form }}
+
+        {% for form in formset.forms %}
+            {{ form|as_uni_form }}
+        {% endfor %}
+
+        <div class="form_block">
+            <input type="button" id="addGuest" value="Add Guest">
+            <input type="button" id="removeGuest" value="Remove Guest">
+        </div>
+
+        <ul id="dinner_descriptions">
+            <h2>Dinner Descriptions</h2>
+            <li>
+                Buffet will include
+            </li>
+            <li>
+                Vegetarian option includes
+            </li>
+        </ul>
+        <div class="form_block">
+            <input type="submit" value="Send">
+        </div>
+    </fieldset>
+</form>
+{% endblock %}
+
+{% block date_banner %}
+
+{% endblock %}
