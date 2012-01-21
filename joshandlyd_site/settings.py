@@ -86,7 +86,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.markup",
     "django.contrib.sessions",
-    "django.contrib.static",
+    "django.contrib.staticfiles",
     "django.contrib.sites",
     "django.contrib.webdesign",
 
